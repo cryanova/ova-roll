@@ -21,6 +21,7 @@
     "styles/styles.css"
   ],
   "url": "",
+  "manifest": "https://github.com/cryanova/ova-roll/module.json",
   "download": "",
   "readme": "",
   "bugs": ""
