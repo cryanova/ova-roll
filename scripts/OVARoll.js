@@ -1,4 +1,4 @@
-export class OVARoller extends Roll 
+class OVARoller extends Roll 
 {
   constructor(termData = {})
   {
@@ -46,6 +46,7 @@ export class OVARoller extends Roll
         if (e.result==1) 
         {    
            e.active=false
+           e.discarded=true
            oneCount++
         }   
     })
@@ -60,7 +61,8 @@ export class OVARoller extends Roll
          }   
 
      }
-     m[highest].active=false;        
+     m[highest].active=false; 
+     m[highest].discarded=true;       
     }    
     for (let l=1;l<7;l++)
     {  
@@ -78,9 +80,12 @@ export class OVARoller extends Roll
         }   
     }       
     res._total = newTotal;
+    m.forEach(e=>{
+      if(e.result!=highMatch) e.discarded=true
+    })
     if (newTotal==0)
       res._formula =`CRITICAL FAILURE!`
-    else
+    else      
       res._formula = `Rolled ${m.length} dice. Highest match = ${highMatch}`
     }
     else
