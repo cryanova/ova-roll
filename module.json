@@ -14,7 +14,7 @@
     }
   ],
   "esmodules": [
-    "scripts/main.js"
+    "https://github.com/cryanova/ova-roll/scripts/main.js"
   ],
   "styles": [
     "styles/styles.css"
