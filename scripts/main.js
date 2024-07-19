@@ -1,4 +1,4 @@
-import OVADie from "./ova-die.js"
+import OVADie from "https://github.com/cryanova/ova-roll/ova-die.js"
 class OVARoller extends Roll 
 {
   constructor(termData = {})
@@ -106,11 +106,11 @@ fromData()
      super.fromData();
 }
 }
-Hooks.once("init", function () { 
+Hooks.once("init", e=> { 
    console.log("OVA | Initializing OVA System");
    console.log('-------------------------------------------------------------------------------');
    Roll = OVARoller
-   CONFIG.Dice.types = [OVADie]
+   CONFIG.Dice.types = [OVADie];
    CONFIG.Dice.terms['d'] = OVADie;
 
 })

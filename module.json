@@ -10,8 +10,7 @@
   "authors": [
     {
       "name": "Cryanova",
-      "url": "https://cryanova.online",
-      "flags": {}
+      "url": "https://cryanova.online"
     }
   ],
   "esmodules": [
@@ -20,9 +19,6 @@
   "styles": [
     "styles/styles.css"
   ],
-  "url": "",
-  "manifest": "https://github.com/cryanova/ova-roll/module.json",
-  "download": "",
-  "readme": "",
-  "bugs": ""
+  "url": "https://github.com/cryanova/ova-roll",
+  "manifest": "https://github.com/cryanova/ova-roll/module.json"
 }
