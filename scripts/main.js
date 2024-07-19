@@ -109,7 +109,7 @@ fromData()
 Hooks.once("init", function () { 
    console.log("OVA | Initializing OVA System");
    console.log('-------------------------------------------------------------------------------');
-   //Roll = OVARoller
+   Roll = OVARoller
    CONFIG.Dice.types = [OVADie]
    CONFIG.Dice.terms['d'] = OVADie;
 
