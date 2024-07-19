@@ -1,7 +1,7 @@
 export default class OVADie extends Die {
     constructor(termData = {}) {
         super(termData);
-        Die.MODIFIERS['khs'] = 'keepHighestSum';
+        Die.MODIFIERS['ova'] = 'keepHighestSum';
     }
 
     keepHighestSum(modifier) {
